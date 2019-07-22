@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "_id": 1,
+            "text": "Hello",
+            "createdAt": "2016-06-17 15:30:20",
+            "user": {
+                "_id": 2,
+                "name": "React Native",
+                "avatar": "https://facebook.github.io/react/img/logo_og.png"
+            }
+        },
+        {
+            "_id": 1,
+            "text": "This is a quew ick reply. Do you love Gifted Chat? (radio) KEEP IT",
+            "createdAt": "2016-06-17 15:30:20",
+            "user": {
+                "_id": 2,
+                "name": "React Native",
+                "avatar": "https://facebook.github.io/react/img/logo_og.png"
+            }
+        },
+        {
+            "_id": 1,
+            "text": "Bye",
+            "createdAt": "2016-06-17 15:30:20",
+            "user": {
+                "_id": 2,
+                "name": "React Native",
+                "avatar": "https://facebook.github.io/react/img/logo_og.png"
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "Setting" : {
+       "power" : "on",
+       "light" : "7",
+       "city" : "天津"
+    },
+    "Todo" : {
+       "notFinished" : "7"
+    },
+    "Msg" : {
+       "notRead" : "10"
+    }
+}

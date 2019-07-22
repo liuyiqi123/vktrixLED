@@ -1,0 +1,32 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:server": "node app.js",
+    "build": "webpack --config webpack.config.js",
+    "build:server": "node dist/bundle.js",
+    "js-eslint": "eslint *.js -f html -o ./test/eslint.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "json-loader": "^0.5.7",
+    "mqtt": "^3.0.0",
+    "underscore": "^1.9.1",
+    "urlencode": "^1.1.0",
+    "webpack-encoding-plugin": "^0.3.1"
+  },
+  "devDependencies": {
+    "brfs": "^2.0.2",
+    "eslint": "^6.0.1",
+    "mocha": "^6.1.4",
+    "transform-loader": "^0.2.4",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
