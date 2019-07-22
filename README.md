@@ -13,6 +13,7 @@ Max72xxPanel\ESP8266WiFi\MQTT
 ## 电路连接
 - 点阵in和out一一连接
 - 点阵与wifi连接，Gnd和Vcc请勿接反
+
 LED Matrix Pin -> ESP8266 Pin
 Vcc            -> 3v  (3V on NodeMCU 3V3 on WEMOS)
 Gnd            -> Gnd (G on NodeMCU)
