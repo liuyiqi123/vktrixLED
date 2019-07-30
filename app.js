@@ -44,7 +44,7 @@ ex.put('/getSetting/switch', function (req, res) {
     data = JSON.parse(data);
     data.Setting.power = power ? "on" : "off";
 
-    fs.writeFile(__dirname + urlPool.todo, JSON.stringify(data), function (err) {
+    fs.writeFile(__dirname + urlPool.setting, JSON.stringify(data), function (err) {
       result.result = err ? err : "success";
       mqttHandle.queueHandle(data.Setting.power, 0, 'VKLED/power')
       res.json(result);
@@ -118,7 +118,7 @@ ex.post('/addTodo', function (req, res) {
   });
 })
 
-ex.put('/editTodo/:id', function (req, res) {
+ex.put('/editTodo', function (req, res) {
   // 读取已存在的数据
   fs.readFile(__dirname + urlPool.todo, urlPool.encode, function (err, data) {
     var result = {
@@ -127,8 +127,8 @@ ex.put('/editTodo/:id', function (req, res) {
     let writeData = {
       "data": null
     };
-    let id = req.params.id;
     let params = req.body;
+    let id = params._id;
     let editdData;
 
     data = JSON.parse(data).data;
