@@ -160,6 +160,12 @@ void callback(char *topic, byte *payload, unsigned int length)
 	if (channel.equals("show"))
 	{
 		matrix.fillScreen(HIGH);
+	}
+	else if (channel.equals("power"))
+	{
+		String text = json["text"];
+		bool off = text == "off";
+		matrix.shutdown(off);
 	}	
 	else if (channel.equals("clock"))
 	{
