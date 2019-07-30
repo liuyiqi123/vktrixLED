@@ -216,14 +216,17 @@ function _todoRefresh(type, todo) {
     case "add": //数组增加
       todoData.unfinished.push(todo);
       _.each(todoData.unfinished, function (obj) {
-        if (obj._id === todo._id);
-        clock.reminder(obj);
+        if (obj._id === todo._id){
+          clock.reminder(obj);
+        }
       });
       break;
     case "edit":
       _.each(todoData.unfinished, function (obj) {
-        if (obj._id === todo._id);
-        clock.reminder(obj);
+        if (obj._id === todo._id){
+          obj=todo;
+          clock.reminder(obj);
+        } 
       });
       break;
     case "delete": //数组清除
