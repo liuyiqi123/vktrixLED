@@ -3,7 +3,7 @@ Max72xxPanel\ESP8266WiFi\MQTT
 
 ![电子钟功能演示含天气](/assets/ikle_led_clock.gif)
 
-![显示屏控制，TODO提醒](/assets/ikle_led_clock.gif)
+![显示屏控制，TODO提醒](/assets/ikle_led_todo.gif)
 
 ## 设备
 
